@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75f617ae-2d04-4ac7-8b08-666cccccac2d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ARS.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Menus.java" afterDir="false" />
+    <list default="true" id="75f617ae-2d04-4ac7-8b08-666cccccac2d" name="Changes" comment="project structure">
+      <change afterPath="$PROJECT_DIR$/src/Admin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Flight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Passenger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,10 +63,40 @@
       <workItem from="1684354206802" duration="1132000" />
       <workItem from="1685478644183" duration="2843000" />
       <workItem from="1685516968481" duration="6487000" />
+      <workItem from="1685603747207" duration="9014000" />
+      <workItem from="1685715143690" duration="2045000" />
+      <workItem from="1685787032940" duration="2680000" />
+      <workItem from="1685861684082" duration="8353000" />
+      <workItem from="1685889213920" duration="11799000" />
+      <workItem from="1685959468170" duration="5621000" />
+      <workItem from="1685968606822" duration="5980000" />
     </task>
+    <task id="LOCAL-00001" summary="project structure">
+      <created>1685604003438</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1685604003438</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="project structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="project structure" />
   </component>
 </project>
