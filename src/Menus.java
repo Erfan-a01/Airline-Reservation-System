@@ -12,7 +12,13 @@ public class Menus {
     private Scanner input = new Scanner(System.in);
     Airport airport = new Airport();
 
-    public Menus() throws FileNotFoundException {
+    public Menus() throws IOException {
+        airport.admin.addNewFlight(new Flight("Yazd","Tehran","1402-03-20","18:00",850000,150,true));
+        airport.admin.addNewFlight(new Flight("Tehran","Mashhad","1402-02-29","08:00",940000,120,true));
+        airport.admin.addNewFlight(new Flight("Esfahan","Kish","1402-03-31","15:00",1200000,250,true));
+        airport.admin.addNewFlight(new Flight("Tabriz","Yazd","1402-04-02","13:00",1500000,175,true));
+
+
     }
 
 
