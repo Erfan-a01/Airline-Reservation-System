@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="75f617ae-2d04-4ac7-8b08-666cccccac2d" name="Changes" comment="file functions">
-      <change afterPath="$PROJECT_DIR$/Data/FlightsFile.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Data/PassengersFile.txt" afterDir="false" />
+    <list default="true" id="75f617ae-2d04-4ac7-8b08-666cccccac2d" name="Changes" comment="passenger functions and some menu">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Flight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Flight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Menus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Menus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Passenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Passenger.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +78,7 @@
       <workItem from="1686298760977" duration="9837000" />
       <workItem from="1686317244498" duration="16003000" />
       <workItem from="1686338543934" duration="304000" />
-      <workItem from="1686347676214" duration="7654000" />
+      <workItem from="1686347676214" duration="14034000" />
     </task>
     <task id="LOCAL-00001" summary="project structure">
       <created>1685604003438</created>
@@ -100,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685976180568</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="passenger functions and some menu">
+      <created>1686355694472</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1686355694473</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +122,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="project structure" />
     <MESSAGE value="file functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="file functions" />
+    <MESSAGE value="passenger functions and some menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="passenger functions and some menu" />
   </component>
 </project>
