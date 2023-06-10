@@ -1,3 +1,4 @@
+import java.util.Objects;
 import java.util.Random;
 import java.util.UUID;
 import java.util.concurrent.atomic.AtomicLong;
@@ -28,6 +29,24 @@ public class Flight {
         if(isNew)
             count++;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Flight flight = (Flight) o;
+        return     (Objects.equals(id, flight.id) || flight.id.equals("0"))
+                && (Objects.equals(origin, flight.origin) || flight.origin.equals("0"))
+                && (Objects.equals(destination, flight.destination) || flight.destination.equals("0"))
+                && (Objects.equals(date, flight.date) || flight.date.equals("0"))
+                && (Objects.equals(time, flight.time) || flight.time.equals("0"));
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(index, id, origin, destination, date, time, price, seats, remainingSeats);
+    }
+
 
 //    public Flight() {
 //    }

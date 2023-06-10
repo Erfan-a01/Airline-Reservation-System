@@ -1,3 +1,6 @@
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
 public class Admin {
     private String name;
     private String password ;
@@ -7,10 +10,22 @@ public class Admin {
         this.password = "admin";
     }
 
-    public void addFlight(Flight flight){
+    public void addNewFlight(Flight flight) throws IOException {
+        FlightsFile flightsFile = new FlightsFile();
+        flightsFile.writeFlight(flight,Flight.count);
+    }
+    public void editFlight(Flight flight,int index) throws IOException {
+        FlightsFile flightsFile = new FlightsFile();
+        flightsFile.writeFlight(flight,index);
 
-
-
+    }
+    public void removeFlight(int index) throws IOException {
+        FlightsFile flightsFile = new FlightsFile();
+        for (int i = index+1; i < Flight.count-1 ; i++) {
+            flightsFile.writeFlight(flightsFile.readFlight(i+1),i);
+        }
+        Flight.count--;
+        flightsFile.rFile.setLength(Flight.count*102L);
     }
 
     public String getName() {
