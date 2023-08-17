@@ -25,9 +25,10 @@ public class Flight {
         this.remainingSeats=seats;
         Random random =  new Random();
         char c = (char) (random.nextInt(26)+'a');
-        this.id=""+origin.toLowerCase().charAt(0)+destination.toLowerCase().charAt(0)+c+"-"+time.substring(0,2)+Integer.toString(count);
-        if(isNew)
+        if(isNew) {
             count++;
+            this.id=""+origin.toLowerCase().charAt(0)+destination.toLowerCase().charAt(0)+c+"-"+time.substring(0,2)+Integer.toString(count);
+        }
     }
 
     @Override

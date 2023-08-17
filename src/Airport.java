@@ -14,8 +14,9 @@ public class Airport {
 
     public void signUpUser(String username, String password) throws IOException {
         Ticket[] tickets = new Ticket[10];
-        Passenger newPassenger = new Passenger(username,password,0,tickets,0,true);
+        Passenger newPassenger = new Passenger(username,password,0,tickets,0,false);
         this.passengersFile.writePassenger(newPassenger,Passenger.count);
+        Passenger.count++;
     }
     public boolean checkDuplicateUsername(String username) throws IOException {
         if (username.equals("admin"))

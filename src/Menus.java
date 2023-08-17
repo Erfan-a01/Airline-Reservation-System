@@ -18,7 +18,6 @@ public class Menus {
         airport.admin.addNewFlight(new Flight("Esfahan","Kish","1402-03-31","15:00",1200000,250,true));
         airport.admin.addNewFlight(new Flight("Tabriz","Yazd","1402-04-02","13:00",1500000,175,true));
 
-
     }
 
 
@@ -144,29 +143,29 @@ public class Menus {
                 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
                               >>""");
         String enteredPassword = input.next();
-        while (airport.signInUser(enteredUsername,enteredPassword)==null){
-            System.out.print("""
-                ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-                .......................Sign in..........................
-                .       The username or password is incorrect.         .
-                .          please ReEnter your username:               .
-                ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-                              >>""");
-            enteredUsername = input.next();
-            clearConsole();
-            System.out.print("""
-                ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-                .......................Sign in..........................
-                .           Please enter your password:                .
-                ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-                              >>""");
-            enteredPassword = input.next();
-        }
         if (enteredUsername.equals("admin") && enteredPassword.equals("admin"))
             adminMenuAppearance();
-        else
-            passengerMenuAppearance(airport.signInUser(enteredUsername,enteredPassword));
-
+        else {
+            while (airport.signInUser(enteredUsername, enteredPassword) == null) {
+                System.out.print("""
+                        ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                        .......................Sign in..........................
+                        .       The username or password is incorrect.         .
+                        .          please ReEnter your username:               .
+                        ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                                      >>""");
+                enteredUsername = input.next();
+                clearConsole();
+                System.out.print("""
+                        ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                        .......................Sign in..........................
+                        .           Please enter your password:                .
+                        ::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                                      >>""");
+                enteredPassword = input.next();
+            }
+            passengerMenuAppearance(airport.signInUser(enteredUsername, enteredPassword));
+        }
     }
 
     public void passengerMenuAppearance(Passenger passenger) throws IOException {
@@ -200,6 +199,7 @@ public class Menus {
                     case "0" -> mainMenuAppearance();
                     default -> wrongCommand();
                 }
+                command=input.next();
             }
         }
         catch (Exception e){
@@ -234,7 +234,7 @@ public class Menus {
                 default -> wrongCommand();
 
             }
-
+            command=input.next();
 
         }
 
@@ -502,9 +502,9 @@ public class Menus {
                 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
                 |FlightId |Origin |Destination |Date    |Time   |Price   |Seats|Remaining Seats
                 ................................................................................
-                              >>""");
+                """);
         for (Flight flight : flights) {
-            System.out.printf("|%s\t|%s\t|%s\t|%s\t|%s\t|%d\t|%d\t|%d\t|",
+            System.out.printf("|%s\t|%s\t|%s\t|%s\t|%s\t|%d\t|%d\t|%d\t|%n",
                     flight.getId(),
                     flight.getOrigin(),
                     flight.getDestination(),
